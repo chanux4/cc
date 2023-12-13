@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking System </title>
+
+    </head>
+    <body style="background-color:#00b3b3";>
+        <h2 style="color: #ffffff">Lucy's Bed and Breakfast</h2>
+
+        <button class="btn" type="button"
+                onclick="window.location.href='{{ url_for('capture') }}';">Book A
+            Customer</button><br/> <br/>
+        <button class="btn" type="button"
+                onclick="window.location.href='{{ url_for('customers') }}
+                ';">View Customer List</button>
+
+    </body>
+
+</html>

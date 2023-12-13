@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> Lucy's Bed and Breakfast </title>
+
+    </head>
+    <style>
+
+       table, th, td {
+       border: 1px;
+        }
+       th {
+    text-align: left;
+    }
+         </style>
+
+<body style="background-color:#00b3b3;">
+
+    <table style="width:80%">
+        <tr>
+            <th>Name</th>
+
+            <th>Email</th>
+
+            <th>City</th>
+
+            <th>Booking Date Time</th>
+
+            <th>Phone Number</th>
+
+            </tr>
+
+            {%for customer in data%}
+
+                <tr>
+                    <td>{{customer[0]}}</td>
+
+                    <td>{{customer[1]}}</td>
+
+                    <td>{{customer[2]}}</td>
+
+                    <td>{{customer[3]}}</td>
+
+                    <td>{{customer[4]}}</td>
+
+                    <td>{{customer[5]}}</td>
+
+                    </tr>
+                {%endfor%}
+            </table>
+        </body>
+</html>
